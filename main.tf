@@ -1,13 +1,15 @@
+
 provider "aws" {
   region = var.region
-  AWS_ACCESS_KEY_ID = var.AWS_ACCESS_KEY_ID
-  AWS_SECRET_ACCESS_KEY = var.AWS_SECRET_ACCESS_KEY
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
 
 module "vpc" {
-  source="./modules/vpc/"
+  source="./modules/ec2/"
 }
 module "ec2" {
   source="./modules/ec2/"
  
  }
+
