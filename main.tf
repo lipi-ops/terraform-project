@@ -4,8 +4,8 @@ provider "aws" {
   secret_key = var.secret_key
 }
 
-module "network" {
-  source="./modules/network/"
+module "vpc" {
+  source="./modules/vpc/"
 }
 module "ec2-instances" {
   source="./modules/ec2-instances/"
