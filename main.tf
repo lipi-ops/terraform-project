@@ -8,6 +8,4 @@ region = var.region
 }
 module "ec2-instances" {
   source="./modules/ec2-instances/"
-region = var.region
- 
  }
