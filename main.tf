@@ -1,13 +1,11 @@
+provider "aws" {
+  region = var.region
+}
 variable "region" {
   description = "AWS region"
   type        = string
   default     = "ap-south-1"
 }
-
-provider "aws" {
-  region = var.region
-}
-
 module "network" {
   source = "./modules/network"
 }
