@@ -13,7 +13,7 @@ resource "aws_subnet" "mysubnet" {
   cidr_block = "10.10.10.0/28"
   availability_zone = "ap-south-1a"
  tags = {
-    Name = "myvpc"
+    Name = "mysubnet"
   }
   }
 
