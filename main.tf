@@ -8,6 +8,6 @@ module "vpc" {
   source="./modules/vpc/"
 }
 module "ec2-instances" {
-  source="./modules/ec2-instances/"
+  source="./modules/ec2/"
  
  }
