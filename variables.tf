@@ -4,12 +4,12 @@ variable "region" {
   default     = "ap-south-1"
 }
 
-variable "access_key" {
+variable "AWS_ACCESS_KEY_ID" {
   description = "AWS access key"
   type        = string
 }
 
-variable "secret_key" {
+variable "AWS_SECRET_ACCESS_KEY" {
   description = "AWS secret key"
   type        = string
 }
